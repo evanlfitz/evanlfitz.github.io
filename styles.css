@@ -109,6 +109,49 @@ a {
 }
 
 /* ============================================
+   ABOUT PAGE TWO-COLUMN LAYOUT
+   ============================================ */
+.about-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;          /* override main centering */
+}
+
+/* LEFT SIDE (image + name) */
+.about-left {
+    position: relative;
+}
+
+/* Profile image overlay container */
+.profile-name-overlay {
+    position: relative;
+    display: inline-block;
+}
+
+/* Your name over the picture */
+.profile-name {
+    position: absolute;
+    bottom: 8px;               /* adjust vertical placement */
+    left: 10px;                /* adjust horizontal placement */
+    font-size: 32px;           /* large text */
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+    margin: 0;
+}
+
+/* RIGHT SIDE (bio text) */
+.about-right {
+    width: 60%;
+    font-size: 20px;          /* larger text as desired */
+    line-height: 1.7;
+}
+
+
+/* ============================================
    PROFILE IMAGE — smaller, offset to left
    ============================================ */
 .profile-wrapper {

@@ -1,5 +1,5 @@
 /* ============================================
-   FONT — Adam Miller style (Source Sans Pro)
+   FONT — style (Source Sans Pro)
    ============================================ */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
@@ -11,7 +11,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.6;
     color: white;
-    background: #111; /* black background for full site */
+    background: #111; /* full black background */
 }
 
 a {
@@ -19,18 +19,18 @@ a {
 }
 
 /* ============================================
-   FIXED BLACK NAVIGATION BAR
+   FIXED FULL-WIDTH BLACK NAVIGATION BAR
    ============================================ */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     height: 65px;
+    width: 100%;
     background: black;
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 25px;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.6);
 }
@@ -38,12 +38,11 @@ a {
 .navbar a {
     color: white;
     text-decoration: none;
-    font-size: 20px; /* Bigger for visibility */
     margin-right: 25px;
+    font-size: 20px;
+    font-weight: 600;
     padding: 8px 14px;
     border-radius: 4px;
-    font-weight: 600;
-    transition: 0.2s;
 }
 
 .navbar a:hover {
@@ -51,15 +50,15 @@ a {
 }
 
 .navbar a.active {
-    border: 2px solid white;  /* Highlight active page */
+    border: 2px solid white;
 }
 
 /* ============================================
    FULLSCREEN BANNER
    ============================================ */
 .banner-wrapper {
-    width: 100%;
     height: 100vh;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -80,36 +79,36 @@ a {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    z-index: 10;
-    text-shadow: 0px 4px 18px rgba(0,0,0,0.8);
+    text-shadow: 0 4px 18px rgba(0,0,0,0.8);
 }
 
 .banner-text h1 {
-    font-size: 80px;   /* +25% */
-    font-weight: 700;
+    font-size: 80px;
     margin: 0;
+    font-weight: 700;
 }
 
 .banner-text h2 {
-    font-size: 38px;   /* +25% */
-    font-weight: 300;
+    font-size: 38px;
     margin-top: 15px;
+    font-weight: 300;
 }
 
 /* ============================================
-   MAIN CONTENT (black background)
+   MAIN CONTENT — centered + black box
    ============================================ */
 .container {
     max-width: 900px;
-    margin: 80px auto;
-    padding: 50px 30px;
-    background: #000;  /* black box */
+    margin: 60px auto;
+    padding: 40px 30px;
+    background: #000;
+    text-align: center;
     border-radius: 8px;
-    text-align: center;  /* center text */
+    margin-top: 120px; /* leaves space under fixed nav */
 }
 
 /* ============================================
-   PROFILE PICTURE — smaller, rectangular
+   PROFILE IMAGE — smaller, offset to left
    ============================================ */
 .profile-wrapper {
     width: 260px;
@@ -117,7 +116,7 @@ a {
     overflow: hidden;
     margin: 20px auto;
     border-radius: 6px;
-    transform: translateX(-80px); /* left offset */
+    transform: translateX(-80px);
 }
 
 .profile {
@@ -133,8 +132,8 @@ a {
     display: inline-block;
     padding: 10px 20px;
     background: #007bff;
-    color: white;
     text-decoration: none;
+    color: white;
     border-radius: 6px;
     margin-top: 15px;
 }

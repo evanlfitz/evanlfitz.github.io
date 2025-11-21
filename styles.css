@@ -105,6 +105,7 @@ a {
     text-align: center;
     border-radius: 8px;
     margin-top: 120px; /* leaves space under fixed nav */
+    font-size: 22px;
 }
 
 /* ============================================

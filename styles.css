@@ -112,9 +112,13 @@ a {
 /* ============================================
    PROFILE IMAGE — larger, centered with name overlay
    ============================================ */
-.profile-name-overlay {
+/* .profile-name-overlay {
     position: relative;
     display: inline-block;
+    margin: 0 auto;
+} */
+.profile-name-overlay {
+    width: fit-content;
     margin: 0 auto;
 }
 

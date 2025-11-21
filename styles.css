@@ -11,11 +11,12 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.6;
     color: white;
-    background: #111; /* full black background */
+    background: #111;
 }
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 /* ============================================
@@ -37,12 +38,12 @@ a {
 
 .navbar a {
     color: white;
-    text-decoration: none;
     margin-right: 25px;
     font-size: 20px;
     font-weight: 600;
     padding: 8px 14px;
     border-radius: 4px;
+    transition: 0.2s;
 }
 
 .navbar a:hover {
@@ -70,7 +71,7 @@ a {
 }
 
 /* ============================================
-   CENTERED BANNER TEXT — 25% larger
+   CENTERED BANNER TEXT — enlarged
    ============================================ */
 .banner-text {
     position: absolute;
@@ -95,7 +96,7 @@ a {
 }
 
 /* ============================================
-   MAIN CONTENT — centered + black box
+   MAIN CONTENT — centered black content box
    ============================================ */
 .container {
     max-width: 900px;
@@ -104,69 +105,36 @@ a {
     background: #000;
     text-align: center;
     border-radius: 8px;
-    margin-top: 120px; /* leaves space under fixed nav */
+    margin-top: 120px; /* spacing below fixed navbar */
     font-size: 22px;
 }
 
 /* ============================================
-   ABOUT PAGE TWO-COLUMN LAYOUT
+   PROFILE IMAGE — larger, centered with name overlay
    ============================================ */
-.about-layout {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: left;          /* override main centering */
-}
-
-/* LEFT SIDE (image + name) */
-.about-left {
-    position: relative;
-}
-
-/* Profile image overlay container */
 .profile-name-overlay {
     position: relative;
     display: inline-block;
+    margin: 0 auto;
 }
 
-/* Your name over the picture */
+.profile {
+    width: 380px;       /* large image */
+    height: 260px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Name overlay on image */
 .profile-name {
     position: absolute;
-    bottom: 8px;               /* adjust vertical placement */
-    left: 10px;                /* adjust horizontal placement */
-    font-size: 32px;           /* large text */
+    bottom: 12px;
+    left: 16px;
+    font-size: 40px;
     font-weight: 700;
     color: white;
     text-shadow: 0 2px 6px rgba(0,0,0,0.7);
     margin: 0;
-}
-
-/* RIGHT SIDE (bio text) */
-.about-right {
-    width: 60%;
-    font-size: 20px;          /* larger text as desired */
-    line-height: 1.7;
-}
-
-
-/* ============================================
-   PROFILE IMAGE — smaller, offset to left
-   ============================================ */
-.profile-wrapper {
-    width: 260px;
-    height: 180px;
-    overflow: hidden;
-    margin: 20px auto;
-    border-radius: 6px;
-    transform: translateX(-80px);
-}
-
-.profile {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 /* ============================================
@@ -179,7 +147,7 @@ a {
     text-decoration: none;
     color: white;
     border-radius: 6px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .btn:hover {

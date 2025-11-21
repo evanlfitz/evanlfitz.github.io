@@ -119,8 +119,8 @@ a {
 }
 
 .profile {
-    width: 380px;       /* large image */
-    height: 260px;
+    width: 480px;       /* large image */
+    height: 320px;
     object-fit: cover;
     border-radius: 6px;
 }
